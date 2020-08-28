@@ -8,7 +8,4 @@ package definitions;
 
 public class Student {
 
-    private long studentUniversityRollNumber;
-    private int numberOfIssuedBooks;
-   private String[] book;
 }
