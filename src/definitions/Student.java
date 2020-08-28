@@ -10,5 +10,5 @@ public class Student {
 
     private long studentUniversityRollNumber;
     private int numberOfIssuedBooks;
-    String[] book;
+   private String[] book;
 }

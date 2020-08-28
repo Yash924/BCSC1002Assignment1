@@ -10,23 +10,10 @@ public class Book {
     private String bookAuthorName;
     private String isbnNumber;
 
-    public String getBookName() {
-        return bookName;
-    }
+   public Book(String bookName,String bookAuthorName,String isbnNumber){
+       this.bookName=bookName;
+       this.bookAuthorName=bookAuthorName;
+       this.isbnNumber=isbnNumber;
+   }
 
-    public void setBookName(String bookName) {
-        this.bookName =bookName;
-    }
-
-    public String getBookAuthorName() {
-        return bookAuthorName;
-    }
-
-    public String getISBN() {
-        return isbnNumber;
-    }
-
-    public void setISBN(String isbnNumber) {
-        this.isbnNumber = isbnNumber;
-    }
 }

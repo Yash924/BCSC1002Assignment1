@@ -7,5 +7,5 @@
 package definitions;
 
 public class Library {
-    String[] currentlyAvailableBooks;
+   private String[] currentlyAvailableBooks;
 }
