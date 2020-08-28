@@ -6,6 +6,8 @@
  * */
 package definitions;
 
+import java.util.Arrays;
+
 public class Student {
     private String studentFirstName;
     private String StudentMiddleName;
@@ -46,7 +48,34 @@ public class Student {
     public void setStudentLastName(String studentLastName) {
         this.studentLastName = studentLastName;
     }
+
+    public long getStudentUniversityRollNumber() {
+        return studentUniversityRollNumber;
+
+    }
+
+    public void setStudentUniversityRollNumber(long studentUniversityRollNumber) {
+        this.studentUniversityRollNumber = studentUniversityRollNumber;
+    }
+
+    public int getNumberOfIssuedBooks() {
+        return numberOfIssuedBooks;
+    }
+
+    public void setNumberOfIssuedBooks(int numberOfIssuedBooks) {
+        this.numberOfIssuedBooks = numberOfIssuedBooks;
+    }
+
+    public String[] getIssuedBooksName() {
+        return issuedBooksName;
+    }
+
+    public void setIssuedBooksName(String[] issuedBooksName) {
+        this.issuedBooksName = issuedBooksName;
+    }
 }
+
+
 
 
 
