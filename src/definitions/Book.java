@@ -1,10 +1,10 @@
-package definitions;/*  Created by IntelliJ IDEA.
+/*  Created by IntelliJ IDEA.
  *  User: Yash Garg(yash924)
  *  Date: 21/08/20
  *  Time: 3:50 PM
  *  File Name : book.java
  * */
-
+package definitions;
 public class Book {
     private String bookName;
     private String bookAuthorName;
