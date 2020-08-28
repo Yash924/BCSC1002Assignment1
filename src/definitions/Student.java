@@ -14,11 +14,12 @@ public class Student {
     private int numberOfIssuedBooks;
     private String[] issuedBooksName;
 
+    public Student()
+    {   this.studentFirstName = "studentFirstName";
+        this.StudentMiddleName = "studentMiddleName";
+        this.studentLastName = "studentLastName";
+        this.studentUniversityRollNumber = 191500924;
+        this.numberOfIssuedBooks = 3;
+        this.issuedBooksName = new String[numberOfIssuedBooks];
     }
-
-
-
-
-
-
-
+}
