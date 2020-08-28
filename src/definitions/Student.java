@@ -1,5 +1,5 @@
 /*  Created by IntelliJ IDEA.
- *  User: Divyansh Bhardwaj (dbc2201)
+ *  User: Yash Garg (yash924)
  *  Date: 21/08/20
  *  Time: 3:49 PM
  *  File Name : Student.java
@@ -7,4 +7,8 @@
 package definitions;
 
 public class Student {
+
+    private long studentUniversityRollNumber;
+    private int numberOfIssuedBooks;
+    String[] book;
 }
