@@ -22,4 +22,31 @@ public class Student {
         this.numberOfIssuedBooks = 3;
         this.issuedBooksName = new String[numberOfIssuedBooks];
     }
+
+    public String getStudentFirstName() {
+        return studentFirstName;
+    }
+
+    public void setStudentFirstName(String studentFirstName) {
+        this.studentFirstName = studentFirstName;
+    }
+
+    public String getStudentMiddleName() {
+        return StudentMiddleName;
+    }
+
+    public void setStudentMiddleName(String studentMiddleName) {
+        StudentMiddleName = studentMiddleName;
+    }
+
+    public String getStudentLastName() {
+        return studentLastName;
+    }
+
+    public void setStudentLastName(String studentLastName) {
+        this.studentLastName = studentLastName;
+    }
 }
+
+
+
