@@ -5,6 +5,9 @@
  *  File Name : book.java
  * */
 package definitions;
+
+import java.util.Objects;
+
 public class Book {
     private String bookName;
     private String bookAuthorName;
@@ -34,4 +37,16 @@ public class Book {
     public void setISBN(String isbnNumber) {
         this.isbnNumber = isbnNumber;
     }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "bookName='" + bookName + '\'' +
+                ", bookAuthorName='" + bookAuthorName + '\'' +
+                ", isbnNumber='" + isbnNumber + '\'' +
+                '}';
+    }
 }
+
+
+
