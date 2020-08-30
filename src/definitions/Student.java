@@ -22,7 +22,7 @@ public class Student {
         this.StudentMiddleName = "studentMiddleName";
         this.studentLastName = "studentLastName";
         this.studentUniversityRollNumber = 191500924;
-        this.numberOfIssuedBooks = 3;
+        this.numberOfIssuedBooks = 6;
         this.issuedBooksName = new String[numberOfIssuedBooks];
     }
 
@@ -106,6 +106,7 @@ public class Student {
         result = 31 * result + Arrays.hashCode(getIssuedBooksName());
         return result;
     }
+
 }
 
 

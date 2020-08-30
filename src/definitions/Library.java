@@ -5,7 +5,33 @@
  *  File Name : Library.java
  * */
 package definitions;
+import java.util.Arrays;
 
 public class Library {
-   private String[] currentlyAvailableBooks;
+    private Book [] currentlyAvailableBooks;
+    private static final int MAXIMUM_BOOKS = 3;
+
+    public Library() {
+        this.currentlyAvailableBooks= new Book[MAXIMUM_BOOKS];
+        for (int Index = 0; Index < MAXIMUM_BOOKS; Index++) {
+            this.currentlyAvailableBooks[Index] = new Book();
+        }
+    }
+
+    public Book[] getCurrentlyAvailableBooks() {
+        return currentlyAvailableBooks;
+    }
+
+    public void setCurrentlyAvailableBooks(Book[] currentlyAvailableBooks) {
+        this.currentlyAvailableBooks = currentlyAvailableBooks;
+    }
+
+    @Override
+    public String toString() {
+        return "Library{" +
+                "currentlyAvailableBooks=" + Arrays.toString(currentlyAvailableBooks) +
+                '}';
+    }
+
+
 }

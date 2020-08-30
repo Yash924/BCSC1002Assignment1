@@ -7,35 +7,50 @@
 package definitions;
 
 import java.util.Objects;
+import java.util.Scanner;
 
 public class Book {
     private String bookName;
     private String bookAuthorName;
     private String isbnNumber;
+    public void enterBookName(){
+        Scanner in=new Scanner(System.in);
+        System.out.println("enter book name");
+        String bookName=in.nextLine();
+        System.out.println("enter book author name");
+        String bookAuthorName= in.nextLine();
+        System.out.println("enter isbn number of the book");
+        String bookIsbnNumber=in.nextLine();
+    }
 
 
-        public Book(String bookName,String bookAuthorName,String isbnNumber){
-       this.bookName=bookName;
-       this.bookAuthorName=bookAuthorName;
-       this.isbnNumber=isbnNumber;
-   }
+    public Book() {
+        this.bookName = bookName;
+        this.bookAuthorName = bookAuthorName;
+        this.isbnNumber = isbnNumber;
+    }
+
     public String getBookName() {
         return bookName;
     }
 
     public void setBookName(String bookName) {
-        this.bookName =bookName;
+        this.bookName = bookName;
     }
 
     public String getBookAuthorName() {
         return bookAuthorName;
     }
 
-    public String getISBN() {
+    public void setBookAuthorName(String bookAuthorName) {
+        this.bookAuthorName = bookAuthorName;
+    }
+
+    public String getIsbnNumber() {
         return isbnNumber;
     }
 
-    public void setISBN(String isbnNumber) {
+    public void setIsbnNumber(String isbnNumber) {
         this.isbnNumber = isbnNumber;
     }
 
@@ -62,6 +77,7 @@ public class Book {
     public int hashCode() {
         return Objects.hash(getBookName(), getBookAuthorName(), isbnNumber);
     }
+
 }
 
 
