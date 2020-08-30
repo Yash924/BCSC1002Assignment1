@@ -13,7 +13,6 @@ import definitions.Library;
 import java.util.Scanner;
 
 public class FrontDesk {
-
     public static void main(String[] args) {
         Student student = new Student();
         Book book = new Book();
